@@ -13,5 +13,6 @@ export class TotalComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
 }

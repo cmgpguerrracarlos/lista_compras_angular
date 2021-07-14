@@ -1,4 +1,9 @@
 <div>
-    <app-item *ngFor="let i of items" [item]="i" (deleteItem)="deleteItem($event)">
-    </app-item>
+    <app-total mensaje="Total a Pagar: " [total]="total"></app-total>
+    <app-item 
+    *ngFor="let i of items" 
+    [item]="i" 
+    (deleteItem)="deleteItem($event)"
+    (toggleItem)="toggleItem($event)"
+    ></app-item>
 </div>
